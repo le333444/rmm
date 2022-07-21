@@ -175,7 +175,7 @@ function SubmitResults() {
 function gameTime() {
     _gameTimeNum--;
     if (_gameTimeNum <= 0) {
-        GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
+        GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;嬷嬷累了';
         gameOver();
         GameLayerBG.className += ' flash';
         createjs.Sound.play("end");
@@ -314,7 +314,7 @@ function showGameScoreLayer() {
             cookie('bast-score', bast, 100);
         }
     }
-    document.getElementById('GameScoreLayer-bast').innerHTML = '最佳&nbsp;&nbsp;' + bast;
+    document.getElementById('GameScoreLayer-bast').innerHTML = '嬷嬷最远走了&nbsp;&nbsp;' + bast;
     l.style.display = 'block';
 }
 
