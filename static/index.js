@@ -247,7 +247,7 @@ function gameLayerMoveNextRow() {
 }
 
 function gameTapEvent(e) {
-    if (score == 99){
+    if (score == 89){
     	createjs.Sound.play("aini");
 	score = 180;
 	 
@@ -314,7 +314,7 @@ function showGameScoreLayer() {
     var c = document.getElementById(_gameBBList[_gameBBListIndex - 1].id).className.match(_ttreg)[1];
     l.className = l.className.replace(/bgc\d/, 'bgc' + c);
     document.getElementById('GameScoreLayer-text').innerHTML = shareText(_gameScore);
-    var score_text='得分&nbsp;&nbsp;';
+    var score_text='嬷嬷本次走了&nbsp;&nbsp;';
     score_text+=deviation_time<23000?_gameScore:"<span style='color:red;'>"+_gameScore+"</span>";
     document.getElementById('GameScoreLayer-score').innerHTML = score_text;
     var bast = cookie('bast-score');
