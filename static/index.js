@@ -247,7 +247,7 @@ function gameLayerMoveNextRow() {
 }
 
 function gameTapEvent(e) {
-    if (score = 99){
+    if (score == 99){
     	createjs.Sound.play("aini");
 	score = 180;
 	 
