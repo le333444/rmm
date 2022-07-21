@@ -3,7 +3,7 @@
 
 <head>
     <title<容嬷嬷大冒险/title>
-    <meta itemprop="name" content="容嬷嬷大冒险" />
+    <meta itemprop="name" content="容嬷嬷大冒险(by fish/特别冥屑:donkey)" />
     <meta itemprop="description" content="新概念音游" />
     <meta itemprop="image" content="https://www.thac.cc/kano/res/logo.jpg" />
     <meta charset="utf-8" />
