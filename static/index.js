@@ -113,8 +113,13 @@ function gameInit() {
         src: "./static/music/tap.mp3",
         id: "tap"
     });
+    createjs.Sound.registerSound({
+        src: "./static/music/aini.mp3",
+        id: "aini"
+    });
     gameRestart();
 }
+
 
 function gameRestart() {
     _gameBBList = [];
@@ -242,6 +247,8 @@ function gameLayerMoveNextRow() {
 }
 
 function gameTapEvent(e) {
+    createjs.Sound.play("aini");
+	
     if (_gameOver) {
         return false;
     }
