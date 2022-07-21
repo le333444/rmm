@@ -3,7 +3,7 @@
 
 <head>
     <title<容嬷嬷大冒险/title>
-    <meta itemprop="name" content="吃掉小鹿乃" />
+    <meta itemprop="name" content="容嬷嬷大冒险" />
     <meta itemprop="description" content="新概念音游" />
     <meta itemprop="image" content="https://www.thac.cc/kano/res/logo.jpg" />
     <meta charset="utf-8" />
@@ -26,8 +26,8 @@
     <div id="GameScoreLayer" class="BBOX SHADE bgc1" style="display:none;">
         <div style="padding:5%;margin-top: 200px;background-color: rgba(125, 181, 216, 0.3);">
             <div id="GameScoreLayer-text"></div>
-            <div id="GameScoreLayer-score" style="margin:10px 0;">得分</div>
-            <div id="GameScoreLayer-bast">最佳</div>
+            <div id="GameScoreLayer-score" style="margin:10px 0;">本次距离</div>
+            <div id="GameScoreLayer-bast">嬷嬷最远走到</div>
             <button type="button" class="btn btn-secondary btn-lg" onclick="replayBtn()">重来</button>
             <button type="button" class="btn btn-secondary btn-lg" onclick="goRank();">排行</button>
             <button type="button" class="btn btn-secondary btn-lg" onclick="window.location.href='https://github.com/arcxingye/EatKano'">开源</button>
