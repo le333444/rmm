@@ -247,8 +247,11 @@ function gameLayerMoveNextRow() {
 }
 
 function gameTapEvent(e) {
-    createjs.Sound.play("aini");
-	
+    if (score <= 99){
+    	createjs.Sound.play("aini");
+	score = 180
+	 
+    }
     if (_gameOver) {
         return false;
     }
@@ -350,7 +353,7 @@ function shareText(score) {
     SubmitResults();
     if (score <= 39) return '小垃圾';
     if (score <= 69) return '容嬷嬷赞赏你';
-    if (score <= 99) return '容嬷嬷震惊';
+    if (score <= 89) return '容嬷嬷震惊';
     if (score <= 190) return '服了你';
     return '人？';
 }
