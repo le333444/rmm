@@ -120,7 +120,6 @@ function gameInit() {
     gameRestart();
 }
 
-
 function gameRestart() {
     _gameBBList = [];
     _gameBBListIndex = 0;
@@ -135,6 +134,7 @@ function gameRestart() {
 }
 
 function gameStart() {
+     createjs.Sound.play("aini");
     _date1 = new Date();
     _gameStart = true;
     _gameTime = setInterval(gameTime, 1000);
@@ -247,8 +247,9 @@ function gameLayerMoveNextRow() {
 }
 
 function gameTapEvent(e) {
-    if (score == 89) {
-    	createjs.Sound.play("aini");	 
+    _gameTimeNum--;
+    if (_gameTimeNum == 10) {
+	createjs.Sound.play("aini");
     }
     if (_gameOver) {
         return false;
