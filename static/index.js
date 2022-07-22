@@ -345,12 +345,16 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 29) return '小垃圾';
-    if (score <= 39) return '容嬷嬷赞赏你';
-    if (score <= 49) return '容嬷嬷震惊';
-    if (score <= 89) {
-	return '你因剧烈运动而残疾，一首蛄蛹者送给你';
+    if (score <= 10) {
 	createjs.Sound.play("aini");
+	return '你因运动过慢而停止呼吸，小垃圾';
+    }
+    if (score <= 29) return '容嬷嬷嘲讽你';
+    if (score <= 59) return '容嬷嬷赞赏你';
+    if (score <= 89) return '容嬷嬷震惊';
+    if (score <= 100) {
+	createjs.Sound.play("aini");
+	return '你因剧烈运动而残疾，一首孤勇者送给你';
     }
 	    
     return '人？';
