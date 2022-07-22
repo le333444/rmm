@@ -408,6 +408,7 @@ function isnull(val) {
         return false;
     }
 }
+
 function goRank() {
     var name=document.getElementById("username").value;
     var link='./rank.php';
