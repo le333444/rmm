@@ -117,6 +117,10 @@ function gameInit() {
         src: "./static/music/aini.mp3",
         id: "aini"
     });
+    createjs.Sound.registerSound({
+        src: "./static/music/guyong.mp3",
+        id: "guyong"
+    });
     gameRestart();
 }
 
@@ -347,13 +351,13 @@ function shareText(score) {
     SubmitResults();
     if (score <= 10) {
 	createjs.Sound.play("aini");
-	return '你因运动过慢而停止呼吸，小垃圾';
+	return '你因运动过慢而停止呼吸，蛄蛹者';
     }
     if (score <= 29) return '容嬷嬷嘲讽你';
     if (score <= 59) return '容嬷嬷赞赏你';
     if (score <= 89) return '容嬷嬷震惊';
     if (score <= 100) {
-	createjs.Sound.play("aini");
+	createjs.Sound.play("guyong");
 	return '你因剧烈运动而残疾，一首孤勇者送给你';
     }
 	    
