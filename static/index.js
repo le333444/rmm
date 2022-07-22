@@ -348,7 +348,11 @@ function shareText(score) {
     if (score <= 39) return '小垃圾';
     if (score <= 69) return '容嬷嬷赞赏你';
     if (score <= 89) return '容嬷嬷震惊';
-    if (score <= 190) return '服了你';
+    if (score <= 110) {
+	return '你因剧烈运动而残疾，一首蛄蛹者送给你';
+	createjs.Sound.play("aini");
+    }
+	    
     return '人？';
 }
 
