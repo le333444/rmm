@@ -126,7 +126,7 @@ function gameRestart() {
     _gameScore = 0;
     _gameOver = false;
     _gameStart = false;
-    _gameTimeNum = 40;
+    _gameTimeNum = 20;
     GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
     countBlockSize();
     refreshGameLayer(GameLayer[0]);
@@ -345,10 +345,10 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 39) return '小垃圾';
-    if (score <= 69) return '容嬷嬷赞赏你';
-    if (score <= 89) return '容嬷嬷震惊';
-    if (score <= 110) {
+    if (score <= 29) return '小垃圾';
+    if (score <= 39) return '容嬷嬷赞赏你';
+    if (score <= 49) return '容嬷嬷震惊';
+    if (score <= 89) {
 	return '你因剧烈运动而残疾，一首蛄蛹者送给你';
 	createjs.Sound.play("aini");
     }
