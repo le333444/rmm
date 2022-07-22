@@ -246,10 +246,6 @@ function gameLayerMoveNextRow() {
 }
 
 function gameTapEvent(e) {
-    _gameTimeNum--;
-    if (_gameTimeNum == 20) {
-	createjs.Sound.play("aini");
-    }
     if (_gameOver) {
         return false;
     }
