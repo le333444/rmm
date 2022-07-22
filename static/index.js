@@ -134,7 +134,6 @@ function gameRestart() {
 }
 
 function gameStart() {
-     createjs.Sound.play("aini");
     _date1 = new Date();
     _gameStart = true;
     _gameTime = setInterval(gameTime, 1000);
